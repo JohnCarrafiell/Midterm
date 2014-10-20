@@ -21,11 +21,32 @@
 *  "Thank you -- have a great day!"
 *  
 */
+import java.util.Scanner;
 
 public class Grader {
   
   public static void main(String[] args) {
-    //TODO insert your code here
+     
+     double numPoints = 0.0;
+     double numMissed = 0.0;
+     double totalScore = 0.0;
+      
+     Scanner scnr = new Scanner (System.in);
+     System.out.println("Input the number of points possible: ");
+     numPoints = scnr.nextDouble();
+     System.out.println("Input the number of points missed: ");
+     numMissed = scnr.nextDouble();
+     
+     if (numMissed >=0){
+     
+     totalScore = (numPoints - numMissed) / numPoints;
+     System.out.println(+totalScore+"%");}
+     
+     else if 
+     (numMissed <0){
+     
+     System.out.println("Thank you -- have a great day!");}
+
   }
   
   
